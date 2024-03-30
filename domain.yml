@@ -1,0 +1,71 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - find_foods
+  - inform_food_category
+  - inform_place
+  - ask_food_suggestion
+  - specify_food_category
+
+entities:
+  - food_category
+  - place
+slots:
+  place:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: place
+  food_category:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: food_category
+
+responses:
+  utter_greet:
+    - text: "Hi, I'm helping to find foods for you!"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_ask_place:
+    - text: "Where are you heading for food?"
+  utter_ask_food_category:
+    - text: "What's food you feel like?"
+
+actions:
+  - action_show_foods
+
+forms:
+  food_finder_form:
+    required_slots:
+      - food_category
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
