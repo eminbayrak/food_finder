@@ -34,7 +34,7 @@ class ActionShowFoods(Action):
             print("DEBUG: Default location used")  # Debugging line
 
         # Replace with your Google Maps API key
-        _api_key = "AIzaSyAIlCeazuzVW6Fs2HEZhVvGPsznof-clWU"
+        _api_key = "GOOGLE_MAPS_API_KEY"
 
         # Check if Google Maps API is working
         google_maps_url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=0,0&radius=100&type=restaurant&key={_api_key}"
