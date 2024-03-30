@@ -11,8 +11,8 @@ class FoodFinder:
             "radius": 5000,  # search places in a 5000m radius
             # type of place to search for (in this case, "restaurant")
             "type": place_type,
-            "keyword": place_type,  # keyword to filter for Thai restaurants
-            "key": api_key,  # your Google Maps API key
+            "keyword": place_type,
+            "key": api_key,
         }
         try:
             response = requests.get(base_url, params=params)

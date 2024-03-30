@@ -57,7 +57,7 @@ class ActionShowFoods(Action):
 
         _text = f"Here are some {_category} restaurants near your location{user_location}: "
         for _place in _places[:5]:  # show top 5 places
-            _text += f"\n- {_place['name']}"
+            _text += f"\n- {_place['name']}, Rating: {_place['rating']}, Location: ({_place['geometry']['location']['lat']}, {_place['geometry']['location']['lng']}), Vicinity: {_place['vicinity']}"
         dispatcher.utter_message(text=_text)
 
         return [SlotSet("food_category", None)]
