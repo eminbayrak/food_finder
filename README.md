@@ -4,7 +4,9 @@ This is a chatbot project that suggests restaurants based on the user's food cho
 
 ## Demo
 
-[![Watch the video](https://img.youtube.com/vi/RGRJO0-BAGU/hqdefault.jpg)](https://www.youtube.com/watch?v=RGRJO0-BAGU)
+<a href="https://www.youtube.com/watch?v=RGRJO0-BAGU">
+<img src="https://img.youtube.com/vi/RGRJO0-BAGU/hqdefault.jpg" width="600" height="300">
+</a>
 
 ## Features
 
