@@ -2,6 +2,10 @@
 
 This is a chatbot project that suggests restaurants based on the user's food choice using the Google Maps API.
 
+## Demo
+
+[![Watch the video](https://img.youtube.com/vi/RGRJO0-BAGU/hqdefault.jpg)](https://www.youtube.com/watch?v=RGRJO0-BAGU)
+
 ## Features
 
 - Provides restaurant recommendations based on user's food choice.
