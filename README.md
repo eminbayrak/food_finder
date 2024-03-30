@@ -4,7 +4,7 @@ This is a chatbot project that suggests restaurants based on the user's food cho
 
 ## Demo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RGRJO0-BAGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://github.com/eminbayrak/food_finder/assets/32653645/a70e3254-63dd-4659-89f6-24734b878e43
 
 ## Features
 
